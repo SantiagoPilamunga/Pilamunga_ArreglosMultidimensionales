@@ -8,5 +8,20 @@ int main()
     scanf("%d", &n);
     printf("Ingrese el mumero de columnas: ");
     scanf("%d", &m);
+    int matrix[l][n][m];
+    for (int k = 0; k < l; k++)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                matrix[k][i][j]=0;
+                printf("%d", matrix[k][i][j]);
+            }
+            printf("\n");
+        }
+        
+    }
+    
     return 0;
 }
