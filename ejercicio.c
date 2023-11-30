@@ -13,6 +13,7 @@ int main()
     {
         if (k==l-1)
         {
+            printf("Matriz final: \n");
             for (int i = 0; i < n; i++)
             {
             for (int j = 0; j < m; j++)
@@ -23,6 +24,8 @@ int main()
             printf("\n");
             }
         }else{
+
+            printf("Matriz: %d \n", k+1);
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
