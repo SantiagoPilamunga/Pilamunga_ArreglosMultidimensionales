@@ -11,16 +11,29 @@ int main()
     int matrix[l][n][m];
     for (int k = 0; k < l; k++)
     {
-        for (int i = 0; i < n; i++)
+        if (k==l-1)
         {
-            for (int j = 0; j < m; j++)
+            for (int i = 0; i < n; i++)
             {
-                matrix[k][i][j]=0;
-                printf("%d", matrix[k][i][j]);
-            }
+            for (int j = 0; j < m; j++)
+                {
+                    matrix[k][i][j]=1;
+                    printf("%d\t", matrix[k][i][j]);
+                }
             printf("\n");
+            }
+        }else{
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    matrix[k][i][j]=0;
+                    printf("%d\t", matrix[k][i][j]);
+                }
+                printf("\n");
+            }
+
         }
-        
     }
     
     return 0;
